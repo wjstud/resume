@@ -60,12 +60,12 @@
                 <hr>
                 <ul class="progress-list">
                     <li>
-                        <label class="left-label">Python</label>
+                        <label class="left-label">shell</label>
                         <progress value="80" max="100"></progress>
                     </li>
                     <li>
-                        <label class="left-label">shell</label>
-                        <progress value="80" max="100"></progress>
+                        <label class="left-label">Python</label>
+                        <progress value="70" max="100"></progress>
                     </li>
                 </ul>
             </div>
@@ -74,10 +74,10 @@
                 <hr>
                 <ul class="stack-list">
                     <li>
-                        <label class="left-label">Web开发</label><span class="label-value">Flask web开发</span></li>
+                        <label class="left-label">运维与Devops</label><span class="label-value">MongoDB、MySQL、Redis、Docker、ELK、Tomcat、Jenkins、Nginx、Zabbix、Ansible、LVS、OpenStack等</span></li>
                     </li>
                     <li>
-                        <label class="left-label">Devops</label><span class="label-value">MongoDB、MySQL、Redis、Docker、ELK、Tomcat、Jenkins、Nginx、Zabbix、Ansible、LVS、OpenStack等</span></li>
+                        <label class="left-label">Web开发</label><span class="label-value">Flask web开发</span></li>
                     </li>
                     <li>
                         <label class="left-label">爬虫</label><span class="label-value">Scrapy开发爬虫</span></li>
@@ -134,18 +134,21 @@
                         <h3>讯代理(爬虫IP代理)</h3>
                         <p>
                         项目环境:
-                        <br> 本项目有3000+台vps(包含500+自建拨号vps和2500+从拨号vps供应商购买)，统一使用Ansible+ssh免密码部署环境
-                        <br><br>      本项目使用技术：
-                        <br>           ipset
-                        <br>          Ansible+ssh免密码
-                        <br>          squid
-                        <br>          socket5
-                        <br>         数据库 mysql + redis
-                        <br>          web    nginx + tomcat + java
+                        <br> 本项目有2000+台vps(从拨号vps供应商购买)，统一使用Ansible+ssh免密码部署环境.
+                        <br> 2台nginx(一台使用一台备用)，2台web，2台api，5台转发，1台后台 
+                        <br><br> 本项目使用技术：
+                        <br>         ipset: 当某个ip访问频次超过阀值时自动添加到黑名单
+                        <br>         Ansible+ssh: 免密码访问所有vps
+                        <br>         squid: http代理
+                        <br>         socket5: socket代理
+                        <br>         jenkins: 自动发布项目war包
+                        <br>         mysql+redis: 项目所有数据存储到mysql中，redis存储用户订单api和ip代理池
+                        <br>         nginx+tomcat+jdk: nginx负责负载均衡、反向代理和动静分离，tomcat负责动态请求
                         <br><br>  项目职责:
-                        <br>     1、添加新vps到数据库
-                        <br>     2、搭建web前后端分离环境
-                        <br>     3、黑名单维护
+                        <br>     1、配置新vps到数据库中
+                        <br>     2、搭建并维护项目环境
+                        <br>     3、黑名单程序维护
+                        <br>     4、使用jenkins发布项目
                         </p>
                     </li>
                     <li>
@@ -164,6 +167,12 @@
                 <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
                 <hr>
                 <ul class="experience-list">
+                    <li>
+                        <h3>毕业证书</h3>
+                        <p>
+                            大连理工大学 毕业证书
+                        </p>
+                    </li> 
                     <li>
                         <h3>Python结业证书</h3>
                         <p>
