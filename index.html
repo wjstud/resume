@@ -25,7 +25,7 @@
                     <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
                 </div>
                 <h1 id="username" >wjstud</h1>
-                <h4 id="persona-tag" >Linux运维与Devops/Python/Flask Web</h4>
+                <h4 id="persona-tag" >Linux运维/k8s/Devops/Python</h4>
             </div>
             <div class="profile info-unit">
                 <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
@@ -74,10 +74,7 @@
                 <hr>
                 <ul class="stack-list">
                     <li>
-                        <label class="left-label">运维与Devops</label><span class="label-value">MongoDB、MySQL、Redis、Docker、ELK、Tomcat、Jenkins、Nginx、Prometheus、TiDB、Zabbix、Ansible、LVS、OpenStack等</span></li>
-                    </li>
-                    <li>
-                        <label class="left-label">Web开发</label><span class="label-value">Flask web开发</span></li>
+                        <label class="left-label">运维与Devops</label><span class="label-value">MongoDB、MySQL、Redis、Docker、k8s、ELK、Tomcat、Jenkins、Nginx、Prometheus、TiDB、Zabbix、Ansible、LVS、OpenStack等</span></li>
                     </li>
                     <li>
                         <label class="left-label">爬虫</label><span class="label-value">Scrapy开发爬虫</span></li>
@@ -122,8 +119,12 @@
                         <p>期间负责公司讯代理项目环境部署，监控报警，jenkins自动发布、自动化脚本编写、zabbix服务监控与报警、ELK日志收集、网络搭建与维护、防火墙、路由器、交换机、esxi虚拟机管理配置。</p>
                     </li>
                     <li>
-                        <h3>杭州卡趣网络 - 运维 2018.7.12 - 至今 </h3>
+                        <h3>杭州卡趣网络 - 运维 2018.7.12 - 2018.12.31 </h3>
                             <p>期间负责公司所有项目环境部署、prometheus+grafana监控展示及报警、所有项目迭代使用jenkins自动发布、mysql，nginx，redis，rocketmq等高可用部署、数据备份、网络管控与维护 </p>
+                    </li>
+                    <li>
+                        <h3>杭州瀚唯网络科技 - 运维 2019.1.7 - 至今 </h3>
+                            <p>期间负责公司项目容器化实施落地，保证项目高可用、k8s编排管理mysql主从、redis主从、MongoDB分片集、rabbitmq集群、es集群、mariadb集群、prometheus监控及报警、项目使用gitlab全自动发布,打包上线</p>
                     </li>
                 </ul class="experience-list">
             </div>
@@ -136,10 +137,8 @@
                         <p>
                         项目简介:
                         <br> 讯代理，一家高品质代理IP提供商。所有代理服务器均为自建服务器，产品以绿色安全、高速稳定的优越品质著称，品质领先于行业内众多IP代理产品。
-                        <br> 讯代理秉承品质服务、质量优先的理念，致力于为可以提供高品质代理IP。
                         <br> 讯代理提供的优质代理，每天有效数量15万左右，可用率在80%以上，有效确保用户提取的每一个代理IP的时效与质量。
                         <br> 独享动态针对爬虫业务需求特点，专业研发的一款灵活稳定的代理IP，资源独享，灵活稳定。用户可自由控制每个代理IP的使用时长，视工作需求灵活切换；且高速稳定，支持多线程高并发使用。
-                        <br> 动态混播是一款专业定制的高效、量大、具有全条件筛选和专属技术支持的动态代理，依据客户需求，优先反馈、及时调整，免除后顾之忧。
                         <br><br> 项目环境:
                         <br> 本项目有2000+台vps服务器(从拨号vps供应商购买),2台nginx(一台使用一台备用)，2台web，2台api，2台转发，1台后台 
                         <br><br> 本项目使用技术：
@@ -161,15 +160,38 @@
                         </p>
                     </li>
                     <li>
-                        <h3>Jobplus项目开发</h3>
+                        <h3>蜂收部落</h3>
                         <p>
-                            项目环境:
-                            <br> git + flask 协作开发、pytest测试、nginx + supervisor + gunicorn 部署上线
-                            <br><br> 项目地址:
-                                <br> 完整代码：https://github.com/wjstud/jobplus5-1
-                                <br> 部署上线说明：https://github.com/wjstud/jobplus5-1/wiki
-                        </p>
+                            项目简介:
+                            <br> 本项目共有3大板块（小蜜蜂、卖家版、回收站），对应不同的后端，服务、中间件共用，节省资源
+                            <br><br> 项目环境:
+                            <br> redis主从、zookeeper集群、TiDB集群、MariaDB主从、rocketMQ集群共4台+1台java服务+3台后端
+                            <br><br> 本项目使用技术:
+                            <br>         各中间件主从集群的搭建
+                            <br>         prometheus监控告警
+                            <br>         iptables防火墙
+                            <br><br> 项目职责:         
+                            <br>     1、搭建并维护项目环境
+                            <br>     2、监控服务器资源并配置告警
+                            <br>     3、协助开发解决bug错误
+                        </p> 
                     </li>
+                    <li>
+                        <h3>饭糖</h3>
+                        <p>
+                            项目简介:
+                            <br>娱乐社交分享平台。项目全部使用k8s容器编排，项目采用分布式架构，总共分为9个模块。
+                            <br><br> 项目环境:
+                            <br> 30台机器组成k8s集群环境，包含3台etcd节点，3台master节点（3个apiserver,3个controller,3个scheduler), 4套mysql一主二从数据库集群，2套redis主从，MongoDB集群，es集群，rabbitmq集群，9个模块每个都有副本作为冗余。
+                            <br><br> 本项目使用技术:
+                            <br>         k8s容器编排技术
+                            <br>         gitlab ci cd持续集成
+                            <br>         私有harbor仓库搭建使用，制作自定义镜像
+                            <br><br> 项目职责:
+                            <br>     1、搭建并维护项目环境
+                            <br>     2、项目自动化发布上线，版本迭代
+                        </p>
+                    </li> 
                 </ul>
             </div>
             <div class="trophy info-unit">
